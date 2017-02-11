@@ -1,3 +1,52 @@
 <p>
   resume works!
 </p>
+
+<h2>My Resume</h2>
+
+<div class="">
+  <span>{{resume.name}}</span> <br>
+  <span>{{resume.cellphone}}</span> <br>
+  <span>{{resume.email}}</span> <br>
+  <span>{{resume.github}}</span> <br>
+  <span>{{resume.linkedIn}}</span> <br>
+  <span>{{resume.summary}}</span> <br>
+  <span>{{resume.summary}}</span> <br>
+  <ul>
+    <li *ngFor="let skill of resume.skills">
+      {{skill}}
+    </li>
+  </ul>
+  <ul>
+    <li *ngFor="let job of resume.jobs">
+      <span>{{job.workTitle}}</span> <br>
+      <span>{{job.dateStarted}}</span> <br>
+      <span>{{job.dateEnded}}</span> <br>
+      <span>{{job.company}}</span> <br>
+      <span>{{job.location}}</span> <br>
+      <ul>
+        <li *ngFor="let res of job.responsibilities">
+          {{res}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li *ngFor="let school of resume.schools">
+      <span>{{school.degree}}</span> <br>
+      <span>{{school.dateCompleted}}</span> <br>
+      <span>{{school.schoolName}}</span> <br>
+      <span>{{school.location}}</span> <br>
+    </li>
+  </ul>
+</div>
+
+<!--<ul class="resume">
+  <span>{{resume.name}}</span> 
+
+    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+        <button class="delete" (click)="delete(hero); $event.stopPropagation()">x</button>
+    </li>
+
+</ul>-->
