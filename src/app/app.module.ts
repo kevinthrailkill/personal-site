@@ -12,13 +12,18 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
+import { ResumeComponent } from './resume/resume.component';
+
+import { ResumeService } from './app-services/Resume.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
     PortfolioComponent,
-    HomeComponent
+    HomeComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,7 @@ import { HomeComponent } from './home/home.component';
     FlexLayoutModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ResumeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
