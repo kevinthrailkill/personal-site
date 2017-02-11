@@ -11,12 +11,14 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
