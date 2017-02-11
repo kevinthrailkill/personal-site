@@ -2,12 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
+import { MaterialModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
-import { ContactComponent } from '../contact/contact.component';
-import { PortfolioComponent } from '../portfolio/portfolio.component';
+
+import { AppComponent } from './app.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { PortfolioComponent } from '../portfolio/portfolio.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    FlexLayoutModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
