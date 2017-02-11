@@ -6,8 +6,8 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 
 import 'hammerjs';
-import { ContactComponent } from './contact/contact.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from '../contact/contact.component';
+import { PortfolioComponent } from '../portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
