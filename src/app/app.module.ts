@@ -14,7 +14,13 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 
-import { ResumeService } from './app-services/Resume.service';
+import { ResumeService } from './app-services/resume.service';
+import { ContactService } from './app-services/contact.service';
+import { HomeService } from './app-services/home.service';
+import { ProjectService } from './app-services/project.service';
+
+
+
 
 
 @NgModule({
@@ -33,7 +39,7 @@ import { ResumeService } from './app-services/Resume.service';
     FlexLayoutModule,
     AppRoutingModule
   ],
-  providers: [ResumeService],
+  providers: [ResumeService, ContactService, HomeService, ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

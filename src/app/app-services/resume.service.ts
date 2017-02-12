@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Resume } from '../custom-classes/resume'
-import { RESUME } from './kevin-resume'
+import { RESUME } from './data/kevin-resume'
 
 @Injectable()
 export class ResumeService {

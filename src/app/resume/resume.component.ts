@@ -4,7 +4,7 @@ import { Resume } from '../custom-classes/resume';
 import { ProfessionalExperience } from '../custom-classes/professional-experience';
 import { Education } from '../custom-classes/education';
 
-import { ResumeService } from '../app-services/Resume.service';
+import { ResumeService } from '../app-services/resume.service';
 
 @Component({
   selector: 'app-resume',

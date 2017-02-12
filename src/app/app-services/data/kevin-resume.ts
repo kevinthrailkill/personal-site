@@ -1,6 +1,6 @@
-import { Resume } from '../custom-classes/resume';
-import { ProfessionalExperience } from '../custom-classes/professional-experience';
-import { Education } from '../custom-classes/education';
+import { Resume } from '../../custom-classes/resume';
+import { ProfessionalExperience } from '../../custom-classes/professional-experience';
+import { Education } from '../../custom-classes/education';
 
 export const PROFESSIONAL: ProfessionalExperience[] = [
     {

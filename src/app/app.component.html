@@ -1,10 +1,21 @@
 <h1>
   {{title}}
 </h1>
+
 <nav md-tab-nav-bar>
-  <a md-tab-link routerLink="/home" routerLinkActive="active">Home</a>
-  <a md-tab-link routerLink="/projects" routerLinkActive="active">Projects</a>
-  <a md-tab-link routerLink="/resume" routerLinkActive="active">Resume</a>
-  <a md-tab-link routerLink="/contact" routerLinkActive="active">Contact</a>
+  <a md-button routerLink="/home" routerLinkActive="active">Home</a>
+  <a md-button routerLink="/projects" routerLinkActive="active">Projects</a>
+  <a md-button routerLink="/resume" routerLinkActive="active">Resume</a>
+  <!--<a md-tab-link routerLink="/contact" routerLinkActive="active">Contact</a>-->
+  <a md-mini-fab href="mailto:kevinjt92@gmail.com?Subject=Hello%20Kevin">
+    <i class="fa fa-envelope " aria-hidden="true"></i>
+  </a>
+  <a md-mini-fab href="https://github.com/kevinthrailkill">
+    <i class="fa fa-github " aria-hidden="true"></i>
+  </a>
+  <a md-mini-fab href="https://www.linkedin.com/in/kevin-thrailkill-33b6934b">
+    <i class="fa fa-linkedin-square " aria-hidden="true"></i>
+  </a>
 </nav>
+
 <router-outlet></router-outlet>
