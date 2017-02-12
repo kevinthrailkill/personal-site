@@ -5,17 +5,25 @@
 <div class="app-navbar">
   <nav class="site-navbar">
     <!--<span>Kevin Thrailkill</span>-->
-    <button md-button (click)="sidenav.toggle()">
+    <a md-button (click)="sidenav.toggle()">
       <i class="fa fa-bars fa-3x " aria-hidden="true"></i>
-    </button>
+    </a>
+
+    <!--<a href="mailto:kevinjt92@gmail.com?Subject=Hello%20Kevin" style="color:white;float:right;">
+      <i class="fa fa-envelope" aria-hidden="true" style="font-size:1.5em;"></i>
+    </a>-->
+    <!--<a md-button (click)="sidenav.toggle()">
+      <i class="fa fa-bars fa-2x " aria-hidden="true">
+      </i><br>Contact Kevin
+    </a>-->
   </nav>
 </div>
 <md-sidenav-container class="example-container">
   <md-sidenav #sidenav class="example-sidenav">
     <a md-button routerLink="/home" routerLinkActive="active" (click)="sidenav.close()">Home</a> <br>
     <a md-button routerLink="/projects" routerLinkActive="active" (click)="sidenav.close()">Projects</a> <br>
-    <a md-button routerLink="/resume" routerLinkActive="active"(click)="sidenav.close()" >Résumé</a> <br>
-    <a md-button routerLink="/contact" routerLinkActive="active" (click)="sidenav.close()">Contact</a>
+    <a md-button routerLink="/resume" routerLinkActive="active" (click)="sidenav.close()">Résumé</a> <br>
+    <!--<a md-button routerLink="/contact" routerLinkActive="active" (click)="sidenav.close()">Contact</a>-->
   </md-sidenav>
 
   <div class="example-sidenav-content">

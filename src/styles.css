@@ -29,8 +29,8 @@ app-root {
 }
 
 app-home, app-resume, app-contact, app-portfolio {
-  padding: 20px;
-  /*background: #FAFAFA;*/
+  margin: auto;
+  background: #FAFAFA;
 }
 
 app-root {
@@ -63,4 +63,15 @@ app-root {
 .example-sidenav {
   padding: 20px;
 }
+
+.md-sidenav-container {
+  color: black;
+  background: #fafafa;
+}
+
+md-sidenav {
+  background: #a8a8a8;
+  color: black;
+}
+
 
