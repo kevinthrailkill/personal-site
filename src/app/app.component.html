@@ -1,21 +1,25 @@
-<h1>
+<!--<h1>
   {{title}}
-</h1>
+</h1>-->
 
-<nav md-tab-nav-bar>
-  <a md-button routerLink="/home" routerLinkActive="active">Home</a>
-  <a md-button routerLink="/projects" routerLinkActive="active">Projects</a>
-  <a md-button routerLink="/resume" routerLinkActive="active">Resume</a>
-  <!--<a md-tab-link routerLink="/contact" routerLinkActive="active">Contact</a>-->
-  <a md-mini-fab href="mailto:kevinjt92@gmail.com?Subject=Hello%20Kevin">
-    <i class="fa fa-envelope " aria-hidden="true"></i>
-  </a>
-  <a md-mini-fab href="https://github.com/kevinthrailkill">
-    <i class="fa fa-github " aria-hidden="true"></i>
-  </a>
-  <a md-mini-fab href="https://www.linkedin.com/in/kevin-thrailkill-33b6934b">
-    <i class="fa fa-linkedin-square " aria-hidden="true"></i>
-  </a>
-</nav>
+<div class="app-navbar">
+  <nav class="site-navbar">
+    <!--<span>Kevin Thrailkill</span>-->
+    <button md-button (click)="sidenav.toggle()">
+      <i class="fa fa-bars fa-3x " aria-hidden="true"></i>
+    </button>
+  </nav>
+</div>
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    <a md-button routerLink="/home" routerLinkActive="active" (click)="sidenav.close()">Home</a> <br>
+    <a md-button routerLink="/projects" routerLinkActive="active" (click)="sidenav.close()">Projects</a> <br>
+    <a md-button routerLink="/resume" routerLinkActive="active"(click)="sidenav.close()" >Résumé</a> <br>
+    <a md-button routerLink="/contact" routerLinkActive="active" (click)="sidenav.close()">Contact</a>
+  </md-sidenav>
 
-<router-outlet></router-outlet>
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+
+</md-sidenav-container>
