@@ -5,7 +5,8 @@ import { Education } from './education';
  * Resume Class that hold everything that I include in my resume. 
  */
 export class Resume {
-    name: string;
+    firstName: string;
+    lastName: string;
     cellphone: string;
     email: string;
     github: string;

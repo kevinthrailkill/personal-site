@@ -4,7 +4,7 @@ import { Education } from '../../custom-classes/education';
 
 export const PROFESSIONAL: ProfessionalExperience[] = [
     {
-        workTitle: "Software Engineer/Advisor To Board of Directors",
+        workTitle: "Software Engineer",
         dateStarted: "Oct 2014",
         dateEnded: "Sep 2016",
         company: "Distractive Media",
@@ -29,7 +29,7 @@ export const PROFESSIONAL: ProfessionalExperience[] = [
         dateStarted: "Sep 2013",
         dateEnded: "March 2014",
         company: "Cental Pacific Ski Club",
-        location: "San Luis Obispo",
+        location: "San Luis Obispo, CA",
         responsibilities: ["Maintained the website and databases as well as run the day to day operations for the club which has around 1000 students",
             "Developed and designed an iOS app to keep in contact with the 1000 members, send out push notifications and keep users updated on club activities and events, https://itunes.apple.com/us/app/central-pacific-ski-club-app/id912590132?mt=8",
             "Planned and ran collegiate ski trips for anywhere up to 500 members at a single time",
@@ -51,10 +51,8 @@ export const SCHOOLS: Education[] = [
     }]
 
 export const SKILLS: string[] = [
-    "iOS Development",
-    "Web Development",
-    "Software Engineering",
-    "Project Management",
+    "iOS Development - Web Development",
+    "Software Engineering - Project Management",
     "Photoshop - InDesign - Illustrator",
     "Objective-C - Swift",
     "HTML - CSS - Javascript - jQuery",
@@ -64,7 +62,8 @@ export const SKILLS: string[] = [
 ]
 
 export const RESUME: Resume = {
-    name: "Kevin Thrailkill",
+    firstName: "Kevin",
+    lastName: "Thrailkill",
     cellphone: "925-922-4965",
     email: "kevinjt92@gmail.com",
     github: "https://github.com/kevinthrailkill",

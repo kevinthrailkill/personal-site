@@ -74,4 +74,18 @@ md-sidenav {
   color: black;
 }
 
+md-list md-list-item {
+  color: black;
+}
+
+.containerX {
+  margin-top:25px;
+}
+
+.job-responsibilities {
+  word-wrap: break-word;
+  white-space: normal !important;
+  margin-top:5px !important;
+}
+
 
