@@ -1,7 +1,34 @@
 <img src="assets/home-top.jpg" alt="Home Top" style="width:100%">
 
-<br>
+<div style="padding: 20px;margin-top:20px;margin-bottom:100px;">
 
-<h1>
-  Work In Progress
-</h1>
+
+  <div class="containerX">
+    <div class="flex-container" fxLayout="row" fxLayout.xs="column" fxFlex class="coloredContainerX box">
+      <div fxFlex> ABOUT </div>
+      <div fxFlex style="margin-top: 15px !important">
+        {{home.summary}}
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="containerX">
+    <div class="flex-container" fxLayout="row" fxLayout.xs="column" fxFlex class="coloredContainerX box">
+      <div fxFlex> CONTACT </div>
+      <div fxFlex style="margin-top: 15px !important">
+        <a md-mini-fab href="mailto:{{home.email}}?Subject=Hello%20{{home.firstName}}">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a md-mini-fab target="_blank" href="{{home.github}}">
+          <i class="fa fa-github " aria-hidden="true"></i>
+        </a>
+        <a md-mini-fab target="_blank" href="{{home.linkedIn}}">
+          <i class="fa fa-linkedin-square " aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>

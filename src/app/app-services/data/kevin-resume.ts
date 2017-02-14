@@ -72,7 +72,7 @@ export const RESUME: Resume = {
     skills: SKILLS,
     jobs: PROFESSIONAL,
     schools: SCHOOLS,
-    downloadPath: "/temp"
+    downloadPath: "/assets/Kevin-Thrailkill-Resume.pdf"
 }
 
 

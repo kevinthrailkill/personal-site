@@ -8,7 +8,7 @@ export class ProjectService {
 
   constructor() { }
 
-  getResume(): Project[] {
+  getProjects(): Project[] {
     return PROJECTS;
   }
 
